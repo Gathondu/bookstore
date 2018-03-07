@@ -1,0 +1,7 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Denis Ngugi Gathondu <thundoss@gmail.com>",
+  "license": "MIT"
+}
