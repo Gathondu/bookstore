@@ -6,11 +6,15 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack -w --mode development"
+    "dev": "webpack -w --mode development",
+    "nodemon": "nodemon --exec babel-node server/index"
   },
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "webpack": "^4.1.1"
+    "webpack": "^4.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
