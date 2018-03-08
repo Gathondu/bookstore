@@ -1,11 +1,9 @@
-const { Client } = require('pg');
-const client = new Client({
-    database: 'books-dev'
+const { Pool } = require('pg');
+const pool = new Pool({
+    database: 'books-dev',
+    max: 20,
+    idleTimeoutMillis: 30000,
+    connectionTimeoutMillis: 2000,
 });
 
-client.connect()
-
-client.query('SELECT * from books', [], (err, res) => {
-  console.log(err ? err.stack : res.rows)
-  client.end()
-})
+export default pool
