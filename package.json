@@ -5,8 +5,7 @@
   "author": "Denis Ngugi Gathondu <thundoss@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack -w --mode production",
-    "dev": "webpack -w --mode development",
+    "start": "webpack -w --mode $NODE_ENV",
     "nodemon": "nodemon --exec babel-node server/index"
   },
   "dependencies": {
