@@ -5,12 +5,12 @@
   "author": "Denis Ngugi Gathondu <thundoss@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server/index.js",
-    "build": "webpack --mode production",
+    "start": "webpack -w --mode production",
     "dev": "webpack -w --mode development",
     "nodemon": "nodemon --exec babel-node server/index"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "ejs": "^2.5.7",

@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
-import serverRender from './render';
+// import serverRender from './render';
 import apiRouter from './apiRouter'
 
 const app = express();
@@ -14,7 +14,8 @@ app.use('/api', apiRouter);
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index', {content: serverRender()});
+    res.render('index', {content: '' //serverRender()
+    });
 });
 
 var port = process.env.SERVER
