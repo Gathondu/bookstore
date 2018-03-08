@@ -18,5 +18,5 @@ app.get('/', (req, res) => {
     });
 });
 
-var port = process.env.SERVER
+var port = process.env.PORT
 app.listen(port, () => console.log('Server up and running on port', port));
