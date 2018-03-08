@@ -30,6 +30,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: dng-books-review
 
       # run tests!
       # - run: npm test
